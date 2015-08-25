@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Табло аэропорта</title>
+
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="tablo.css" />
+</head>
+<body>
+<table class="size-l show_to show_from">
+    <thead>
+    <tr>
+        <th colspan="8" class="size-l size-m size-s">
+            <input type="checkbox" id="show_flight_from" /><label for="show_flight_from">Вылеты</label>
+            <input type="checkbox" id="show_flight_to" /><label for="show_flight_to">Прилёты</label>
+        </th>
+    </tr>
+    <tr>
+        <th class="column__flight_type size-l size-m">Тип рейса</th><th class="column__flight_type size-s">Тип</th>
+        <th class="column__flight_number size-l size-m">Номер рейса</th><th class="column__flight_number size-s">Номер</th>
+        <th class="column__airline size-l size-m">Авиакомпания</th><th class="column__airline size-s">&nbsp;</th>
+        <th class="column__plain_type size-l size-m size-s">Тип судна</th>
+        <th class="column__airport_to size-l size-m size-s">Аэропорт назначения</th>
+        <th class="column__landing_time size-l size-m size-s">Плановое время</th>
+        <th class="column__status size-l size-m size-s">Статус</th>
+        <th class="column__comments size-l size-m">Примечание</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr class="row_1 row_odd flight_from">
+        <td class="column__flight_type size-l size-m size-s">&nbsp;</td>
+        <td class="column__flight_number size-l size-m size-s">FV 6401</td>
+        <td class="column__airline size-l size-m"><img src="https://yandex.st/rasp/media/data/company/logo/logorus_1.jpg">Россия</td><td class="column__airline size-s"><img src="https://yandex.st/rasp/media/data/company/logo/logorus_1.jpg"></td>
+        <td class="column__plain_type size-l">Airbus A319</td><td class="column__plain_type size-m size-s">A319</td>
+        <td class="column__airport_to size-l size-m size-s">Аэропорт назначения</td>
+        <td class="column__landing_time size-l size-m size-s">Плановое время</td>
+        <td class="column__status size-l size-m size-s">Статус</td>
+        <td class="column__comments size-l size-m">Примечание</td>
+    </tr>
+    <tr class="row_2 row_even flight_to">
+        <td class="column__flight_type size-l size-m size-s">&nbsp;</td>
+        <td class="column__flight_number size-l size-m">Номер рейса</td><td class="column__flight_number size-s">Номер</td>
+        <td class="column__airline size-l size-m">Авиакомпания</td><td class="column__airline size-s">&nbsp;</td>
+        <td class="column__plain_type size-l size-m size-s">Тип судна</td>
+        <td class="column__airport_to size-l size-m size-s">Аэропорт назначения</td>
+        <td class="column__landing_time size-l size-m size-s">Плановое время</td>
+        <td class="column__status size-l size-m size-s">Статус</td>
+        <td class="column__comments size-l size-m">Примечание</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
