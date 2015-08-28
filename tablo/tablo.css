@@ -3,9 +3,13 @@
 }
 
 table {
-    border: 0.4px solid #000;
+    border: none;
     margin: auto;
     padding: 0;
+}
+
+thead, tbody {
+    width: 100%;
 }
 
 table td {
@@ -74,5 +78,9 @@ th.cell.cell__highlighted:hover {
     background-color: #b7c4ff;
 }
 
-
+.fixed {
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
 
