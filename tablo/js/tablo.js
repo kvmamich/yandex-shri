@@ -7,6 +7,20 @@ $(function() {
         $('.cell.' + columnClass + ', .' + rowClass + ' td').toggleClass('cell__highlighted');
     });
 
+    $('td.cell').click(function() {
+        var tr = $(this).parent();
+        alert(
+            'Тип рейса: ' + (tr.hasClass('flight_from') ? 'вылет' : 'прилёт') + '\n' +
+            'Номер рейса: ' + tr.find('.column__flight_number.size-l').text() + '\n' +
+            'Авиакомпания: ' + tr.find('.column__airline.size-l').text() + '\n' +
+            'Тип судна: ' + tr.find('.column__plain_type.size-l').text() + '\n' +
+            'Аэропорт назначения: ' + tr.find('.column__airport_to.size-l').text() + '\n' +
+            'Плановое время: ' + tr.find('.column__landing_time.size-l').text() + '\n' +
+            'Статус: ' + tr.find('.column__status.size-l').text() + '\n' +
+            'Примечание: ' + tr.find('.column__comments.size-l').text()
+        );
+    });
+
 
     $(window).resize(function() {
         var width = $(this).width();
