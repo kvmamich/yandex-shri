@@ -63,6 +63,9 @@ td.column__airline img {
     margin-right: 2px;
 }
 
+td.cell.cell__highlighted {
+    background-color: aquamarine;
+}
 
 
 
