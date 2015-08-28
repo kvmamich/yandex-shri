@@ -20,4 +20,12 @@ $(function() {
 
     });
 
+    $('#show_flight_from').click(function() {
+        $('table.tablo').toggleClass('show_from');
+    });
+
+    $('#show_flight_to').click(function() {
+        $('table.tablo').toggleClass('show_to');
+    });
+
 });
