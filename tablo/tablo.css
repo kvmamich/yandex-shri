@@ -50,11 +50,13 @@ tr.flight_to td.column__flight_type {
 }
 
 tr.flight_from td.column__flight_type {
-    background: url(../glyphicons/png/glyphicons-364-cloud-download.png) no-repeat;
+    background-image: url(../glyphicons/png/glyphicons-364-cloud-download.png);
+    background-repeat: no-repeat;
 }
 
 tr.flight_to td.column__flight_type {
-    background: url(../glyphicons/png/glyphicons-365-cloud-upload.png) no-repeat;
+    background-image: url(../glyphicons/png/glyphicons-365-cloud-upload.png);
+    background-repeat: no-repeat;
 }
 
 td.column__airline img {
@@ -63,8 +65,13 @@ td.column__airline img {
     margin-right: 2px;
 }
 
-td.cell.cell__highlighted {
-    background-color: aquamarine;
+td.cell.cell__highlighted,
+th.cell.cell__highlighted {
+    background-color: #d3e2ff;
+}
+td.cell.cell__highlighted:hover,
+th.cell.cell__highlighted:hover {
+    background-color: #b7c4ff;
 }
 
 
