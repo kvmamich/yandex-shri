@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <title>Проигрыватель</title>
 
-    <link rel="stylesheet" href="player.css">
-
+    <script src="../jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="player.js" type="text/javascript"></script>
 </head>
 <body>
 
-<table class="player playing">
+<table>
     <tr>
-        <td class="play"></td>
-        <td class="pause"></td>
+        <td>
+            <audio id="audio-player" controls></audio>
+            <audio id="audio-source"></audio>
+        </td>
+        <td>
+            <input id="audio-input" type="file" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <canvas></canvas>
+        </td>
     </tr>
 </table>
 
