@@ -1,0 +1,86 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+table {
+    border: none;
+    margin: auto;
+    padding: 0;
+}
+
+thead, tbody {
+    width: 100%;
+}
+
+table td {
+    padding: 0;
+}
+
+table.size-l {
+    width: 900px;
+}
+
+table.size-m {
+    width: 800px;
+}
+
+table.size-s {
+    width: 600px;
+}
+
+table.size-l td:not(.size-l),
+table.size-l th:not(.size-l),
+table.size-m td:not(.size-m),
+table.size-m th:not(.size-m),
+table.size-s td:not(.size-s),
+table.size-s th:not(.size-s),
+table:not(.show_from) tr.flight_from,
+table:not(.show_to) tr.flight_to {
+    display: none;
+}
+
+tr.row_odd {
+    background-color: whitesmoke;
+}
+
+tr.row_even {
+    background-color: white;
+}
+
+tr.flight_from td.column__flight_type,
+tr.flight_to td.column__flight_type {
+    width: 25px;
+    height: 22px;
+}
+
+tr.flight_from td.column__flight_type {
+    background-image: url(../glyphicons/png/glyphicons-364-cloud-download.png);
+    background-repeat: no-repeat;
+}
+
+tr.flight_to td.column__flight_type {
+    background-image: url(../glyphicons/png/glyphicons-365-cloud-upload.png);
+    background-repeat: no-repeat;
+}
+
+td.column__airline img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 2px;
+}
+
+td.cell.cell__highlighted,
+th.cell.cell__highlighted {
+    background-color: #d3e2ff;
+}
+td.cell.cell__highlighted:hover,
+th.cell.cell__highlighted:hover {
+    background-color: #b7c4ff;
+}
+
+.fixed {
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
